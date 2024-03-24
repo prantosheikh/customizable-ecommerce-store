@@ -33,7 +33,9 @@ const MobileFilter: React.FC<MobileFilterProps> = ({ sizes, colors }) => {
 				className="relative z-40 lg:hidden"
 				onClose={onClose}
 			>
-				<div className="fixed inset-0 bg-black bg-opacity-25 "></div>
+				<div className="fixed inset-0 bg-black bg-opacity-25 ">
+					<Dialog.Panel className="relative ml-auto flex h-full w-full"></Dialog.Panel>
+				</div>
 			</Dialog>
 		</div>
 	);
